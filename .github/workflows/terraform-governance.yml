@@ -1,0 +1,12 @@
+name: Terraform Governance
+
+on:
+  workflow_call
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Terraform Validate"
+      - run: echo "Checkov Scan"
